@@ -7,6 +7,7 @@ health3 = 100
 name4 = "shemp"
 health4 = 90
 
+puts "The game started on #{Time.new.strftime("%A %d/%m/%Y at %I:%M%p")}"
 puts "Players:\n\t#{name1}\n\t#{name2}\n\t#{name3}"
 
 puts "#{name1.capitalize} has a health of #{health1}."
