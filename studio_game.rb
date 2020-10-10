@@ -66,4 +66,13 @@ if __FILE__ == $0
   knuckleheads.add_player(player2)
   knuckleheads.add_player(player3)
   knuckleheads.play
+
+  player4 = Player.new("alvin", 120)
+  player5 = Player.new("simon", 85)
+  player6 = Player.new("theodore", 105)
+  chipmunks = Game.new("Chipmunks")
+  chipmunks.add_player(player4)
+  chipmunks.add_player(player5)
+  chipmunks.add_player(player6)
+  chipmunks.play
 end
