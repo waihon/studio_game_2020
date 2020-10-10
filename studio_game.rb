@@ -52,3 +52,9 @@ puts player3.health
 
 player2.name = "lawrence"
 puts player2.name
+
+players = [player1, player2, player3]
+puts "There are #{players.size} players in the game:"
+players.each do |player|
+  puts player
+end
