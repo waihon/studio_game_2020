@@ -1,4 +1,6 @@
 class Player
+  attr_reader :name, :health
+
   def initialize(name, health=100)
     @name = name.capitalize
     @health = health
@@ -34,3 +36,7 @@ player3.blam
 puts player3
 player3.w00t
 puts player3
+
+puts player1.health
+puts player2.health
+puts player3.health
