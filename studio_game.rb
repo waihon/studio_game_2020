@@ -30,6 +30,14 @@ class Player
   end
 end
 
+class Game
+  attr_reader :title
+
+  def initialize(title)
+    @title = title
+  end
+end
+
 player1 = Player.new("moe")
 puts player1
 player1.blam
