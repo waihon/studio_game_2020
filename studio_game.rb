@@ -7,7 +7,7 @@ class Player
     @health = health
 
     def to_s
-      "I'm #{@name} with a health of #{@health}."
+      "I'm #{@name} with a health of #{@health} and a score of #{score}."
     end
 
     def blam
@@ -18,6 +18,10 @@ class Player
     def w00t
       @health += 15
       puts "#{@name} got w00ted!"
+    end
+
+    def score
+      @health + @name.length
     end
   end
 end
