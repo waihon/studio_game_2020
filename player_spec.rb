@@ -9,7 +9,11 @@ describe Player do
     player.name.should == "Larry"
   end
 
-  it "has an initial health"
+  it "has an initial health" do
+    player = Player.new("larry", 150)
+
+    player.health.should == 150
+  end
 
   it "has a string representation"
 
