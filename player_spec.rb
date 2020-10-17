@@ -9,4 +9,13 @@ describe Player do
     player.name.should == "Larry"
   end
 
+  it "has an initial health"
+
+  it "has a string representation"
+
+  it "computes a score as the sume of its health and length of name"
+
+  it "increases health by 15 when w00ted"
+
+  it "decreases health by 10 when blammed"
 end
