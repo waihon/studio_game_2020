@@ -27,7 +27,13 @@ describe Player do
     player.score.should == (150 + 5)
   end
 
-  it "increases health by 15 when w00ted"
+  it "increases health by 15 when w00ted" do
+    initial_health = 150
+    player = Player.new("larry", initial_health)
+    player.w00t
+
+    player.health.should == (initial_health + 15)
+  end
 
   it "decreases health by 10 when blammed"
 end
