@@ -15,7 +15,11 @@ describe Player do
     player.health.should == 150
   end
 
-  it "has a string representation"
+  it "has a string representation" do
+    player = Player.new("larry", 150)
+
+    player.to_s.should == "I'm Larry with a health of 150 and a score of 155."
+  end
 
   it "computes a score as the sume of its health and length of name"
 
