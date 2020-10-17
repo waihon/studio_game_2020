@@ -35,5 +35,11 @@ describe Player do
     player.health.should == (initial_health + 15)
   end
 
-  it "decreases health by 10 when blammed"
+  it "decreases health by 10 when blammed" do
+    initial_health = 150
+    player = Player.new("larry", initial_health)
+    player.blam
+
+    player.health.should == (initial_health - 10)
+  end
 end
