@@ -21,7 +21,11 @@ describe Player do
     player.to_s.should == "I'm Larry with a health of 150 and a score of 155."
   end
 
-  it "computes a score as the sume of its health and length of name"
+  it "computes a score as the sum of its health and length of name" do
+    player = Player.new("larry", 150)
+
+    player.score.should == (150 + 5)
+  end
 
   it "increases health by 15 when w00ted"
 
