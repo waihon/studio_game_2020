@@ -7,6 +7,10 @@ class Player
     @health = health
   end
 
+  def name=(new_name)
+    @name = new_name.capitalize
+  end
+
   def to_s
     "I'm #{@name} with a health of #{@health} and a score of #{score}."
   end
@@ -23,10 +27,6 @@ class Player
 
   def score
     @health + @name.length
-  end
-
-  def name=(new_name)
-    @name = new_name.capitalize
   end
 end
 
