@@ -1,5 +1,4 @@
 require_relative 'game'
-require_relative 'die'
 
 describe Game do
 
@@ -19,6 +18,14 @@ describe Game do
     @game.play
 
     expect(@player.health).to eq(@initial_health + 15)
+  end
+
+  it "skips the player if a medium number is rolled" do
+    allow_any_instance_of(Die).to receive(:roll).and_return(3)
+
+    @game.play
+
+    expect(@player.health).to eq(@initial_health)
   end
 
 end
