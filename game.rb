@@ -18,8 +18,6 @@ class Game
       puts player
     end
     @players.each do |player|
-      player.blam
-      player.w00t
       player.w00t
       puts player
     end
