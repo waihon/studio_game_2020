@@ -1,13 +1,13 @@
-require_relative 'die'
+require_relative 'Dice'
 
-describe Die do
+describe Dice do
 
   before do
     @numbers = Set.new
-    die = Die.new
+    dice = Dice.new
 
     1000.times do
-      @numbers.add(die.roll)
+      @numbers.add(dice.roll)
     end
   end
 
