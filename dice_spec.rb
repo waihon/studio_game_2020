@@ -27,4 +27,20 @@ describe Dice do
     expect(@numbers.member?(7)).to eq(false)
   end
 
+  it "rolls and returns 1 randomly" do
+    expect(@numbers.member?(1)).to eq(true)
+  end
+
+  it "rolls and returns 2 randomly" do
+    expect(@numbers.member?(2)).to eq(true)
+  end
+
+  it "rolls and returns 3 randomly" do
+    expect(@numbers.member?(3)).to eq(true)
+  end
+
+  it "rolls and returns 4 randomly" do
+    expect(@numbers.member?(4)).to eq(true)
+  end
+
 end
